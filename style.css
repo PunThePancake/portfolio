@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+::selection {
+    background: var(--primary);
+    color: #0f0f0f;
+}
+
+:root {
+    --title: 'Unbounded', cursive;
+    --font: 'Space Grotesk', sans-serif;
+    --primary: #ff7c30;
+}
+
+body {
+    background-color: #0f0f0f;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100svw;
+    height: 3rem;
+    position: fixed;
+    background-color: #131313;
+    border-bottom: 1px solid #3a3a3a55;
+    top: 0%;
+}
+
+.top {
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wavy > .break {
+    margin: 1rem;
+}
+
+.wavy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.wavy > .name {
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--primary);
+}
+
+.name > span {
+    animation: wave 2s infinite;
+    animation-delay: calc(var(--i)*0.075s);
+    transform: translateY(-1rem);
+}
+
+@keyframes wave {
+    0%{transform: translateY(-1rem);}
+    50%{transform: translateY(1rem);}
+    100%{transform: translateY(-1rem);}
+}
+
+.info {
+    padding: 1rem;
+    background: #131313;
+    color: #ffffff55;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--font);
+    border-radius: 0.5rem;
+    border: #3a3a3a55 1px solid;
+}
+
+.brand {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+}
+
+.info > .break {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 1px;
+    background-color: #3a3a3a55;
+    margin: 1rem;
+}
+
+.icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(.17,.67,.2,1);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    height: 4.5rem;
+    width: 4.5rem;
+    margin: 1rem;
+    font-weight: 900;
+    user-select: none;
+}
+
+.icon-btn:active {
+    opacity: 0.8;
+    transition: 0s !important;
+}
+
+.icon-btn:hover {
+    transition: 0.3s cubic-bezier(.17,.67,.2,1);
+    scale: 1.05;
+    background-color: var(--primary);
+    color: #131313;
+    rotate: 3deg;
+}
+
+.fa-brands {
+    font-size: 1.5rem;
+}
+
+.info > .text {
+    width: 30svw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem;
+}
