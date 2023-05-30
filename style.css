@@ -14,6 +14,7 @@
     --title: 'Unbounded', cursive;
     --font: 'Space Grotesk', sans-serif;
     --primary: #ff7c30;
+    --panel: #131313
 }
 
 body {
@@ -24,6 +25,30 @@ body {
     align-items: center;
     flex-direction: column;
     overflow-x: hidden;
+}
+
+@media (max-width:960px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .info > .break {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+   
+body::-webkit-scrollbar-track {
+    background-color: var(--panel);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
 }
 
 nav {
@@ -60,6 +85,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     margin: 1rem;
+    user-select: none;
 }
 
 .wavy > .name {
@@ -98,6 +124,7 @@ nav {
     font-family: var(--font);
     border-radius: 0.5rem;
     border: #3a3a3a55 1px solid;
+    max-width: 80svw;
 }
 
 .brand {
@@ -157,7 +184,6 @@ nav {
 }
 
 .info > .text {
-    width: 30svw;
     display: flex;
     justify-content: left;
     align-items: center;

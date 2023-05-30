@@ -1,0 +1,42 @@
+@media (pointer:none), (pointer:coarse) {
+    .wavy {
+        flex-direction: column;
+    }
+
+    .wavy-letter {
+        font-size: 9rem !important;
+    }
+
+    .brand {
+        flex-direction: column;
+    }
+
+    .brand > .icon-btn {
+        width: 200%;
+        height: auto;
+        padding: 2rem;
+        font-size: 2rem;
+        margin: 2rem;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .brand > .icon-btn > i {
+        font-size: 3rem;
+    }
+
+    .info {
+        flex-direction: column-reverse;
+        margin: 5rem;
+    }
+
+    .info > .text {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .info > .break {
+        width: 100%;
+        height: 1px;
+    }
+}
