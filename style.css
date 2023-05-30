@@ -30,10 +30,11 @@ nav {
     width: 100svw;
     height: 3rem;
     position: fixed;
-    background-color: #131313;
+    background-color: #131313be;
     border-bottom: 1px solid #3a3a3a55;
     top: 0%;
     z-index: 100;
+    backdrop-filter: blur(25px) brightness(0.5);
 }
 
 .top {
@@ -86,7 +87,7 @@ nav {
 
 .info {
     padding: 1rem;
-    background: #131313;
+    background: #131313be;
     color: #ffffff55;
     margin: 1rem;
     display: flex;
