@@ -91,6 +91,7 @@ nav {
     flex-wrap: wrap;
     margin: 1rem;
     user-select: none;
+    padding: 3rem;
 }
 
 .wavy > .name {
