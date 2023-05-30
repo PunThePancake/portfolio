@@ -9,9 +9,38 @@
 </head>
 
 <body>
-    <nav></nav>
+    <div class="mobile-nav">
+        <i class="fa-solid fa-bars-staggered"></i>
+    </div>
+    
+    <nav>
+        <a class="nav-brand" href="#home">
+            <i class="fa-solid fa-code nav-logo hidden" style="--i:10"></i>
+            <span class="hidden nav-title" style="--i:12">Ipsum</span>
+        </a>
 
-    <div class="top">
+        <div class="btns">
+            <a class="nav-btn absolute hidden" href="#info" style="--i:18">
+                <i class="fa-solid fa-info before-icon"></i>
+                <span class="circle"></span>
+                <span class="after-text">info</span>
+            </a>
+            
+            <a class="nav-btn absolute hidden" href="#locations" style="--i:16">
+                <i class="fa-solid fa-location-dot before-icon"></i>
+                <span class="circle"></span>
+                <span class="after-text">locations</span>
+            </a>
+
+            <a class="nav-btn absolute hidden" href="#contact" style="--i:14">
+                <i class="fa-solid fa-message before-icon"></i>
+                <span class="circle"></span>
+                <span class="after-text">contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="top" id="home">
         <div class="wavy">
             <div class="first name">
                 <span style="--i:1" class="hidden wavy-letter">L</span>
@@ -49,7 +78,7 @@
         </div>
     </div>
 
-    <div class="temp">
+    <div class="info-page">
         
     </div>
 

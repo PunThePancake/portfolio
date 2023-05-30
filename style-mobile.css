@@ -1,4 +1,15 @@
 @media (pointer:none), (pointer:coarse) {
+    nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+    }
+
     .wavy {
         flex-direction: column;
     }
@@ -12,7 +23,7 @@
     }
 
     .brand > .icon-btn {
-        width: 200%;
+        width: 70svw;
         height: auto;
         padding: 2rem;
         font-size: 2rem;
