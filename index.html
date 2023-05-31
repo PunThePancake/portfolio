@@ -9,8 +9,25 @@
 </head>
 
 <body>
-    <div class="mobile-nav">
+    <div class="mobile-nav hidden" onclick="mobileNavToggle()" style="--i:20">
         <i class="fa-solid fa-bars-staggered"></i>
+    </div>
+
+    <div class="mobile-nav-screen" id="mobileNav" style="--i:12">
+        <a href="#info" class="nav-btn mobile-btn">
+            <i class="fa-solid fa-info"></i>
+            <span class="nav-type">info</span>
+        </a>
+
+        <a href="#info" class="nav-btn mobile-btn" style="--i:14">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="nav-type">locations</span>
+        </a>
+
+        <a href="#info" class="nav-btn mobile-btn" style="--i:16">
+            <i class="fa-solid fa-message"></i>
+            <span class="nav-type">contact</span>
+        </a>
     </div>
     
     <nav>
