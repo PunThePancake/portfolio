@@ -135,6 +135,7 @@ nav > .btns > a {
     justify-content: center;
     align-items: center;
     transition: 0.3s cubic-bezier(.34,.13,.04,1);
+    transition-delay: 0s !important;
 }
 
 .circle {
@@ -161,9 +162,9 @@ nav > .btns > a {
 }
 
 .nav-btn:hover .before-icon {
-    opacity: 0;
+    opacity: 0 !important;
     transition: 0.3s cubic-bezier(.34,.13,.04,1);
-    scale: 0;
+    scale: 0 !important;
 }
 
 .nav-btn:hover .after-text {
