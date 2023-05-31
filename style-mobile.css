@@ -127,3 +127,7 @@
 #mobileNav > .nav-btn:active {
     scale: 0.95;
 }
+
+.mobile-nav > .fa-solid {
+    transition: 0.7s cubic-bezier(.17,.67,.2,1);
+}
