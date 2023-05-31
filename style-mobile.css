@@ -71,7 +71,21 @@
     z-index: 10000;
     transition: 0.6s cubic-bezier(.17,.67,.2,1);
     transition-delay: calc(0.4s + var(--i)*0.025s);
-    display: none !important;
+    display: none;
+}
+
+.mobile-nav > i {
+    position: absolute;
+}
+
+.mobile-nav > .fa-bars {
+    opacity: 1;
+    transition: 0.7s cubic-bezier(.17,.67,.2,1);
+}
+
+.mobile-nav > .fa-xmark {
+    opacity: 0;
+    transition: 0.7s cubic-bezier(.17,.67,.2,1);
 }
 
 .mobile-nav-screen {
