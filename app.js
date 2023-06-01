@@ -1,3 +1,12 @@
+var pin = document.getElementById('pin')
+var nav = document.getElementById('nav')
+
+window.addEventListener('load', function() {
+    setTimeout(() => {
+        nav.style.top = '0rem';
+    }, "1500"); 
+})
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -63,8 +72,6 @@ function pinToggle() {
 }
 
 var prevScrollpos = window.pageYOffset;
-var pin = document.getElementById('pin')
-var nav = document.getElementById('nav')
 
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
