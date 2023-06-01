@@ -40,7 +40,7 @@ body {
         --nav-shade: #ff7c30;
         --background: #ff7c30;
         --panel: #f0f0f0;
-        --border-shade: #dedede55;
+        --border-shade: #ffffff55;
         --select: #fff;
         --mobile-nav: #ff7c30;
         --nav-text: #fff;
@@ -69,6 +69,7 @@ body {
     .info {
         background-color: var(--nav-shade) !important;
         color: #fff !important;
+        border: 1px solid var(--border-shade) !important;
     }
 
     .info > .break {
