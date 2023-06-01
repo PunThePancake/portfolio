@@ -5,25 +5,84 @@ html {
 }
 
 ::selection {
-    background: var(--primary);
-    color: #0f0f0f;
+    background: var(--select);
+    color: var(--background);
 }
 
 :root {
     --title: 'Unbounded', cursive;
     --font: 'Space Grotesk', sans-serif;
     --primary: #ff7c30;
-    --panel: #131313
+    --shade: #0f0f0f;
+    --nav-shade: #131313be;
+    --border-shade: #3a3a3a55;
+    --panel: #131313;
+    --background: #0f0f0f;
+    --select: #ff7c30;
+    --mobile-nav: #111111;
+    --nav-text: #ff7c30;
 }
 
 body {
-    background-color: #0f0f0f;
+    background-color: var(--shade);
     margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --shade: #fff;
+        --nav-shade: #ff7c30;
+        --background: #ff7c30;
+        --panel: #f0f0f0;
+        --border-shade: #dedede55;
+        --select: #fff;
+        --mobile-nav: #ff7c30;
+        --nav-text: #fff;
+    }
+
+    .mobile-nav > i {
+        color: #fff;
+    }
+
+    .nav-brand > i {
+        color: #fff !important;
+    }
+
+    .nav-brand > span {
+        color: #fff !important;
+    }
+
+    .nav-btn > i{
+        color: #fff;
+    }
+
+    .nav-btn > .after-text {
+        color: #fff;
+    }
+
+    .info {
+        background-color: var(--nav-shade) !important;
+        color: #fff !important;
+    }
+
+    .info > .break {
+        background-color: #ffffff55 !important;
+    }
+
+    .info > .brand > .icon-btn {
+        border: 1px solid #fff !important;
+        color: #fff;
+    }
+
+    .info > .brand > .icon-btn:hover {
+        background-color: #fff;
+        color: var(--primary);
+    }
 }
 
 @media (max-width:960px) {
@@ -59,11 +118,11 @@ nav {
     width: 100svw;
     height: 4rem;
     position: fixed;
-    background-color: #131313be;
-    border-bottom: 1px solid #3a3a3a55;
+    background-color: var(--nav-shade);
+    border-bottom: 1px solid var(--border-shade);
     top: 0%;
     z-index: 100;
-    backdrop-filter: blur(25px) brightness(0.5);
+    backdrop-filter: blur(25px);
     display: flex;
     justify-content: space-between;
     align-items: center;

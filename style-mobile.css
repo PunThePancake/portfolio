@@ -65,8 +65,8 @@
     width: 3rem;
     height: 3rem;
     color: var(--primary);
-    background-color: #131313be;
-    border: 1px solid #3a3a3a55;
+    background-color: var(--nav-shade);
+    border: 1px solid var(--boder-shade);
     backdrop-filter: blur(5px);
     z-index: 10000;
     transition: 0.6s cubic-bezier(.17,.67,.2,1);
@@ -91,7 +91,7 @@
 .mobile-nav-screen {
     height: 100svh;
     width: 100svw;
-    background-color: #0f0f0f;
+    background-color: var(--shade);
     position: fixed;
     top: 0%;
     opacity: 0;
@@ -108,11 +108,11 @@
     width: 80svw;
     margin: 1.5rem;
     padding: 3rem;
-    background-color: #131313;
+    background-color: var(--mobile-nav);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--primary);
+    color: var(--nav-text);
     font-size: 2rem;
     border-radius: 0.5rem;
     text-decoration: none;
