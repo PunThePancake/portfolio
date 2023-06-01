@@ -3,6 +3,7 @@ const observer = new IntersectionObserver((entries) => {
         console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show')
+            entry.target.classList.remove('hidden')
         }
     });
 });
@@ -44,4 +45,40 @@ function mobileNavToggle() {
                     });
             }, "1");
     }
+}
+
+function pinToggle() {
+    if (pin.style.rotate === '35deg') {
+        pin.style.rotate = '0deg'
+        pin.style.opacity = '1'
+        pin.style.color = 'var(--primary)'
+        pin.style.backgroundColor = 'var(--pin)'
+    }
+    else {
+        pin.style.rotate = '35deg'
+        pin.style.opacity = '0.3'
+        pin.style.color = 'var(--pin-icon)'
+        pin.style.backgroundColor = '#ffffff00'
+    }
+}
+
+var prevScrollpos = window.pageYOffset;
+var pin = document.getElementById('pin')
+var nav = document.getElementById('nav')
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos & pin.style.rotate === '35deg' & nav.style.height === '4rem') {
+    document.getElementById("nav").style.top = "0";
+    document.getElementById("nav").style.opacity = "1";
+  } else {
+    document.getElementById("nav").style.top = "-4rem";
+    document.getElementById("nav").style.opacity = "0";
+  }
+  prevScrollpos = currentScrollPos;
+
+  if (pin.style.rotate === '0deg') {
+    document.getElementById("nav").style.top = "0";
+    document.getElementById("nav").style.opacity = "1";
+  }
 }
