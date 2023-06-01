@@ -51,8 +51,8 @@ function pinToggle() {
     if (pin.style.rotate === '35deg') {
         pin.style.rotate = '0deg'
         pin.style.opacity = '1'
-        pin.style.color = 'var(--primary)'
-        pin.style.backgroundColor = 'var(--pin)'
+        pin.style.color = 'var(--mobile-nav)'
+        pin.style.backgroundColor = 'var(--pin-icon)'
     }
     else {
         pin.style.rotate = '35deg'

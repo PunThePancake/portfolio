@@ -23,6 +23,7 @@ html {
     --nav-text: #ff7c30;
     --pin: #131313;
     --pin-icon: #ff7c30;
+    --pin-other: #000;
 }
 
 body {
@@ -48,6 +49,7 @@ body {
         --nav-text: #fff;
         --pin: #fff;
         --pin-icon: #fff;
+        --pin-other: #fff;
     }
 
     .mobile-nav > i {
@@ -93,6 +95,10 @@ body {
     .btns > .pin {
         color: #fff;
         border: 1px solid #fff;
+    }
+
+    .nav-break {
+        background-color: #ffffff3a !important;
     }
 }
 
@@ -156,7 +162,7 @@ nav > .btns > a {
 .nav-break {
     height: 2rem;
     width: 1px;
-    color: #ffffff;
+    background-color: #3a3a3a55;
     margin: 0.75rem;
     display: flex;
     justify-content: center;
