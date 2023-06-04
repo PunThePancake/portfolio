@@ -513,6 +513,7 @@ footer {
     justify-content: center;
     align-items: left;
     margin: 2rem;
+    flex-wrap: wrap;
 }
 
 footer > .footer-important > .fa-code {
@@ -561,15 +562,20 @@ footer > .footer-important > .column > .footer-content:active {
     transition: 0s;
 }
 
+footer > .advert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 footer > .advert > i {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 6rem;
-    margin-left: 6rem;
-    margin-bottom: 6rem;
     font-size: 4rem;
     color: var(--select);
     height: 100%;
     opacity: 0.5;
+    margin: 3rem;
 }
